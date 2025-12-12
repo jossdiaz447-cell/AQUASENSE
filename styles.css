@@ -1,0 +1,315 @@
+/* VARIABLES GLOBALES Y ESTILOS BASE */
+:root {
+    --color-dark-bg: #1a1a2e; /* Fondo Oscuro Profundo */
+    --color-accent-blue: #00bcd4; /* Azul Cian/Aqua para Acabados */
+    --color-light-text: #f4f4f9;
+    --color-dark-accent-bg: #283046; /* Fondo de Sección Acentuada */
+    --color-success: #28a745;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text);
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-accent-blue);
+    font-weight: 700;
+}
+
+/* UTILIDADES */
+.section {
+    padding: 80px 0;
+    transition: background-color 0.3s;
+}
+
+.dark-accent-bg {
+    background-color: var(--color-dark-accent-bg);
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--color-light-text);
+    border-bottom: 3px solid var(--color-accent-blue);
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.subsection-title {
+    color: var(--color-accent-blue);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x600?text=Fondo+de+Tecnologia') no-repeat center center/cover; /* Reemplaza esta URL con una imagen de fondo relevante (ej. tuberías, datos) */
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-accent-blue);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.primary-btn {
+    background-color: var(--color-accent-blue);
+    color: var(--color-dark-bg);
+}
+
+.primary-btn:hover {
+    background-color: #008c9e;
+    transform: translateY(-2px);
+}
+
+
+/* PROBLEMA Y SOLUCIÓN GRID */
+.problem-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.problem-card {
+    background-color: var(--color-dark-accent-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.problem-card .material-icons {
+    font-size: 3em;
+    color: var(--color-accent-blue);
+    margin-bottom: 15px;
+}
+
+.problem-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: var(--color-light-text);
+}
+
+/* PROPUESTA DE VALOR */
+.value-prop {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-light-text);
+    margin-bottom: 40px;
+}
+
+.objective-callout {
+    background-color: #1a237e; /* Azul más oscuro */
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 5px solid var(--color-accent-blue);
+}
+
+.objective-callout h3 {
+    color: var(--color-accent-blue);
+    margin-top: 0;
+}
+
+.business-model-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.business-model-grid div {
+    background-color: var(--color-dark-bg);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #3d4a6a;
+    flex: 1;
+}
+
+/* TECNOLOGÍA PROFUNDA */
+.tech-deep-dive {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.tech-item {
+    background-color: var(--color-dark-accent-bg);
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    border-top: 3px solid var(--color-success);
+}
+
+.tech-item h4 {
+    color: var(--color-success);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tech-item .material-icons {
+    margin-right: 10px;
+}
+
+.system-diagram {
+    background-color: var(--color-dark-accent-bg);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* INVERSIÓN Y ROI */
+.investment-ask {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #3d4a6a;
+    border-radius: 10px;
+}
+
+.ask-label {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #ccc;
+    display: block;
+}
+
+.ask-amount {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--color-accent-blue);
+}
+
+.capital-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.capital-grid > div {
+    background-color: var(--color-dark-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-accent-blue);
+    flex: 1;
+    min-width: 250px;
+}
+
+.capital-grid h4 {
+    color: var(--color-accent-blue);
+    margin-top: 0;
+}
+
+.roi-list {
+    list-style: none;
+    padding: 0;
+}
+
+.roi-list li {
+    background-color: var(--color-dark-accent-bg);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.roi-list .material-icons {
+    margin-right: 10px;
+    color: var(--color-success);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #0d0d1a; /* Fondo muy oscuro */
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 5px solid var(--color-accent-blue);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--color-accent-blue);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.demo-link {
+    display: block;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    .section-title {
+        font-size: 2em;
+    }
+    .problem-grid, .tech-deep-dive, .capital-grid, .business-model-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .investment-ask {
+        padding: 15px;
+    }
+    .ask-amount {
+        font-size: 2.5em;
+    }
+}
