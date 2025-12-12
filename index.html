@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUASENSE: Inversión en Gestión Hídrica Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="container">
+            <span class="logo">AQUASENSE</span>
+            <h1>Revolucionando la Detección de Fugas con IoT y Análisis Acústico.</h1>
+            <p>Un dispositivo de borde inteligente que transforma las pérdidas de agua no facturada (ANF) en ingresos directos.</p>
+            <a href="#inversion" class="cta-button primary-btn">Solicitar Deck de Inversión</a>
+        </div>
+    </header>
+
+    <section id="problema" class="section">
+        <div class="container">
+            <h2 class="section-title">01. La Crisis Hídrica y Nuestro Nicho</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <span class="material-icons">trending_down</span>
+                    <h3>Pérdidas Monetarias Monumentales</h3>
+                    <p>Las empresas de agua pierden hasta el **45% del volumen total de agua potable** anualmente. La detección actual es manual, reactiva y no ofrece datos geolocalizados.</p>
+                </div>
+                <div class="problem-card">
+                    <span class="material-icons">timer_off</span>
+                    <h3>Tiempo de Respuesta Crítico</h3>
+                    <p>El tiempo de respuesta (MTR) para localizar y reparar fugas se extiende por días o semanas, aumentando el daño estructural y el costo de reparación civil.</p>
+                </div>
+                <div class="problem-card">
+                    <span class="material-icons">eco</span>
+                    <h3>Impacto Ambiental y Social</h3>
+                    <p>El desperdicio masivo de agua potable impone un estrés insostenible en los acuíferos y agrava los desafíos en regiones afectadas por la sequía.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucion" class="section dark-accent-bg">
+        <div class="container">
+            <h2 class="section-title">02. Aquasense: Solución Disruptiva</h2>
+            <p class="value-prop">**Aquasense es un sistema Edge IoT (Internet de las Cosas de Borde) que utiliza el análisis de vibración acústica y geolocalización GPS para identificar, ubicar y reportar fugas en tiempo real con precisión sub-métrica.**</p>
+            
+            <div class="objective-callout">
+                <h3>Objetivo Principal</h3>
+                <p>Capturar el **10% del mercado global de detección acústica** en los próximos 5 años, ofreciendo una solución rentable y escalable para minimizar el ANF.</p>
+            </div>
+
+            <h3 class="subsection-title">Modelo de Negocio (Monetización Escalable)</h3>
+            <div class="business-model-grid">
+                <div>
+                    <h4>Suscripción (SaaS)</h4>
+                    <p>Acceso mensual a la **Plataforma de Monitoreo Aquasense** para alertas, *heatmaps* de riesgo y analíticas predictivas.</p>
+                </div>
+                <div>
+                    <h4>Dispositivo como Servicio (HaaS)</h4>
+                    <p>Alquiler del hardware industrializado (*Aquasense Tracker*) por dispositivo/mes, incluyendo mantenimiento, asegurando ingresos recurrentes.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tecnologia" class="section">
+        <div class="container">
+            <h2 class="section-title">03. Fundamento Técnico y Hardware</h2>
+            <div class="tech-deep-dive">
+                
+                <div class="tech-item">
+                    <h4><span class="material-icons">science</span> Algoritmo RMS Filtrado (La Clave)</h4>
+                    <p>El ESP32 calcula el **Valor RMS** de la vibración del Piezoeléctrico. La **Calibración Dinámica del Offset (ADC)** elimina el ruido de fondo, garantizando la fiabilidad de la detección y anulando falsos positivos.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4><span class="material-icons">location_on</span> Geolocalización Inmediata</h4>
+                    <p>El módulo GPS se activa únicamente al detectar el umbral de fuga, registrando las coordenadas exactas de la anomalía y minimizando el consumo de energía.</p>
+                </div>
+
+                <div class="tech-item">
+                    <h4><span class="material-icons">memory</span> Procesador ESP32</h4>
+                    <p>Actúa como el cerebro central. Su **ADC de 12 bits** permite un muestreo rápido y preciso para el cálculo de RMS en el borde, junto con la gestión de la conectividad Wi-Fi y la Máquina de Estados robusta.</p>
+                </div>
+            </div>
+
+            <div class="system-diagram">
+                <h4>Flujo de Operación (Máquina de Estados)</h4>
+                <p>Garantiza transiciones controladas: Calibración → Espera → Medición → Alerta (Buzzer/LED Rojo) → Notificación IoT. Esto asegura un uso intuitivo y un manejo eficiente de los recursos.</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="inversion" class="section dark-accent-bg">
+        <div class="container">
+            <h2 class="section-title">04. Proyección de Inversión y ROI</h2>
+
+            <div class="investment-ask">
+                <span class="ask-label">Ronda Semilla Solicitada:</span>
+                <span class="ask-amount">$350,000 USD</span>
+            </div>
+
+            <h3 class="subsection-title">Distribución del Capital</h3>
+            <div class="capital-grid">
+                <div>
+                    <h4>Hardware Industrial</h4>
+                    <p>**$120,000 USD**</p>
+                    <p>Diseño de PCB a medida, caja resistente (IP68), optimización de consumo de batería y pruebas de estrés en campo.</p>
+                </div>
+                <div>
+                    <h4>Plataforma Comercial</h4>
+                    <p>**$150,000 USD**</p>
+                    <p>Desarrollo de un Dashboard IoT comercial escalable, con gestión de usuarios, visualización de *heatmaps* y API de integración.</p>
+                </div>
+                <div>
+                    <h4>Pilotos y Validación</h4>
+                    <p>**$80,000 USD**</p>
+                    <p>Inversión en 3 proyectos piloto remunerados con grandes operadoras para validar el ROI y reducir el MTR en un 40%.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Retorno de la Inversión (ROI)</h3>
+            <ul class="roi-list">
+                <li><span class="material-icons">attach_money</span> **Ingresos Directos:** El ahorro en ANF se convierte directamente en ingresos.</li>
+                <li><span class="material-icons">build</span> **Reducción de Costos:** Disminución de los costos de reparación civil y operativa por la localización exacta.</li>
+                <li><span class="material-icons">speed</span> **Eficiencia Operativa:** Se reduce el MTR (Mean Time to Repair) de días a horas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AQUASENSE | Proyecto Final IoT</p>
+            <p><strong>Contacto:</strong> <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a> | Tel: +52 55 XXXX XXXX</p>
+            <a href="URL_A_VIDEO_DEMO" target="_blank" class="demo-link">Ver Demo Técnica del Prototipo</a>
+        </div>
+    </footer>
+
+</body>
+</html>
